@@ -1,5 +1,6 @@
 package advance_concepts_assignments.assignment_3;
 
+import java.util.Scanner;
 import java.util.stream.Stream;
 
 public class LambdaExample {
@@ -26,6 +27,10 @@ public class LambdaExample {
 
 
         System.out.println("String after concatenation and toUpperCase");
+
+
+        Scanner sccanner = new Scanner(System.in);
+
 
         System.out.println(concatenateStrings.concatenateString("The", "lambda", "has", "too", "many", "string", "argument"));
     }
