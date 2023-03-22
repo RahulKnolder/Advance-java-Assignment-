@@ -26,7 +26,7 @@ public class Driver {
                 firstList.add(myString);
             }
 
-           // using streams to perform operations nad store in ithor list
+           // using streams to perform operations and store in othor list
             List<String> distinctList = firstList.stream().distinct().sorted().collect(Collectors.toList());
             System.out.println();
             System.out.println("Elements after finding the distinct elements");

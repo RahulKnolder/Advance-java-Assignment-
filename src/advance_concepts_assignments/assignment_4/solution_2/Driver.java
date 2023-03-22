@@ -1,6 +1,7 @@
 package advance_concepts_assignments.assignment_4.solution_2;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -14,7 +15,6 @@ public class Driver {
         System.out.println("Enter the list of stirng of elements: ");
         String inputString = readItems.nextLine();
 
-
         DistinctElement task = () -> {
             //Spliting the string into parts
             String[] convertToArray = inputString.split(" ");
@@ -26,7 +26,7 @@ public class Driver {
                 myFirstList.add(convertToArray[indexOfList]);
             }
 
-              //using stream api to find distinct then sort then collect
+            //using stream api to find distinct then sort then collect
             List<String> myDistinctList = (List) myFirstList.stream().distinct().sorted().collect(Collectors.toList());
             System.out.println();
             System.out.println("Elements after finding the distinct elements");

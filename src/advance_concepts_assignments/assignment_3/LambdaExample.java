@@ -6,7 +6,8 @@ public class LambdaExample {
     public static void main(String[] args) {
 
 
-        /* in Question it mas methioned to take agruments other wise I colud have List for inputs to make things easy  but it want fulfilling the  */
+        /* in this assignment its mas mentioned to take arguments otherwise I could have List for inputs to make
+        things easy  but it won't fulfil the Question purpose */
 
 
         //concatenation interface

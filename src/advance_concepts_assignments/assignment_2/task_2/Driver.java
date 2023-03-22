@@ -1,5 +1,6 @@
 package advance_concepts_assignments.assignment_2.task_2;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
@@ -13,7 +14,16 @@ public class Driver {
 
 
         System.out.println("enter the long value");
-        Long values = readLong.nextLong();
-        System.out.println(getNextEven.getNextEven(values));
+
+        //try catch for wrong value input
+        try{
+            Long values = readLong.nextLong();
+            System.out.println(getNextEven.getNextEven(values));
+        }catch (InputMismatchException catchException){
+            System.out.println(catchException);
+        }
+
+
+
     }
 }
