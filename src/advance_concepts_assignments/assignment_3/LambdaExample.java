@@ -18,6 +18,12 @@ public class LambdaExample {
             return result;
         };
 
+
+        /*String::concat is a method reference in Java that refers to the concat() method of the String class.
+         In the context of the Stream API, String::concat can be used as a parameter in various Stream methods that
+         accept a functional interface that takes two parameters, such as reduce() or collect().*/
+
+
         System.out.println("String after concatenation and toUpperCase");
 
         System.out.println(concatenateStrings.concatenateString("The", "lambda", "has", "too", "many", "string", "argument"));

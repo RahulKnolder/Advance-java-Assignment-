@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class Driver {
     public static void main(String[] args) {
 
-        //my list to take lsit input
+        // list input
         List<String> myFirstList = new ArrayList();
         Scanner readItems = new Scanner(System.in);
 
@@ -16,7 +16,7 @@ public class Driver {
         int numberOfInputs = readItems.nextInt();
         readItems.nextLine();
 
-
+       //lambda expression to implement takeDistinctOut method
         DistinctElement task = () -> {
 
             //printing my entered list
@@ -26,7 +26,7 @@ public class Driver {
                 myFirstList.add(myString);
             }
 
-           // using streams to to perform operations nad store in ithor list
+           // using streams to perform operations nad store in ithor list
             List<String> myDistinctList = myFirstList.stream().distinct().sorted().collect(Collectors.toList());
             System.out.println();
             System.out.println("Elements after finding the distinct elements");

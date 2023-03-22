@@ -26,16 +26,15 @@ public class Driver {
                 myFirstList.add(convertToArray[indexOfList]);
             }
 
-              //using stream api
+              //using stream api to find distinct then sort then collect
             List<String> myDistinctList = (List) myFirstList.stream().distinct().sorted().collect(Collectors.toList());
             System.out.println();
             System.out.println("Elements after finding the distinct elements");
 
-              //printing after the processing is done
+
             for (String listElements : myDistinctList) {
                 System.out.print(listElements + " ");
             }
-
         };
 
 

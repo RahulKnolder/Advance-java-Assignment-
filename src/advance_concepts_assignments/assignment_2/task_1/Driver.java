@@ -5,8 +5,7 @@ import advance_concepts_assignments.assignment_2.task_1.CalculateMax;
 import java.util.Scanner;
 
 public class Driver {
-    public Driver() {
-    }
+
 
     public static void main(String[] args) {
 
