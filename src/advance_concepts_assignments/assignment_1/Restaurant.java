@@ -13,6 +13,8 @@ public class Restaurant {
             System.out.println("Press 2 to search Dish.");
             System.out.println("Press 0 to exit.");
 
+
+
             int choice = scanner.nextInt();
 
             if (choice == 0) {
@@ -20,8 +22,6 @@ public class Restaurant {
                 break;
             }
 
-
-            //switch case for the user
             switch (choice) {
                 case 1:
                     System.out.println("Menu:");
@@ -29,6 +29,7 @@ public class Restaurant {
                     for (Dish dish : menuList) {
                         System.out.println(dish.getDishName());
                     }
+
                     break;
                 case 2:
                     System.out.println("Enter the id of the dish:");
