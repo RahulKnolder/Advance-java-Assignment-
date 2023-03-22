@@ -7,12 +7,15 @@ public class Dish {
     private String dishName;
     private LocalDateTime creationTime;
 
+
+    //consructor of Dish class
     public Dish(int dishID, String dishName) {
         this.dishID = dishID;
         this.dishName = dishName;
         this.creationTime = LocalDateTime.now();
     }
 
+    //getteer methods
     public int getDishID() {
         return dishID;
     }

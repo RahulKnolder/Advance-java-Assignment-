@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Driver {
     public static void main(String[] args) {
+
+             //lambda expression and using ternary operator
         NextEven getNextEven=((value)-> value % 2 == 0 ? value + 2 : value + 1);
 
         Scanner readLong= new Scanner(System.in);

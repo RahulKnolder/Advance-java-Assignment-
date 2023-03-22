@@ -29,7 +29,6 @@ public class Restaurant {
                     for (Dish dish : menuList) {
                         System.out.println(dish.getDishName());
                     }
-
                     break;
                 case 2:
                     System.out.println("Enter the id of the dish:");
